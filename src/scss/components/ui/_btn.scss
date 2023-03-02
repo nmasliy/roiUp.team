@@ -1,0 +1,30 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 6px;
+  padding: 17px 32px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  text-align: center;
+  color: $white-color;
+  background: $accent-gradient;
+  cursor: pointer;
+
+  img,
+  svg {
+    margin-right: 10px;
+    transition: transform $transition;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    img,
+    svg {
+      transform: translateX(5px);
+    }
+  }
+}

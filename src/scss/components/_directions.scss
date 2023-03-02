@@ -1,0 +1,31 @@
+.direction {
+  position: relative;
+  padding-bottom: 80px;
+
+  &::before {
+    @include bg-circle;
+
+    right: -160px;
+    top: -134px;
+  }
+
+  &__head {
+    margin-bottom: 64px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  &__item {
+    max-width: 230px;
+    text-align: center;
+
+    img {
+      display: inline-block;
+      margin: 0 auto 32px;
+    }
+  }
+}

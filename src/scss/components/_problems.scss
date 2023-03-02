@@ -1,0 +1,47 @@
+.problems {
+  padding-bottom: 80px;
+
+  &__inner {
+    position: relative;
+
+    &::before {
+      @include bg-circle;
+
+      left: 166px;
+      top: -36px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 64px;
+    text-align: center;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 23px;
+  }
+
+  &__item {
+    border-radius: 24px;
+    padding: 0 30px 40px;
+    text-align: center;
+    background: rgba(28, 29, 35, 60%);
+    backdrop-filter: blur(7px);
+
+    p {
+      font-size: 16px;
+    }
+  }
+
+  &__img {
+    position: relative;
+    bottom: 32px;
+    margin-bottom: -30px;
+  }
+
+  &__name {
+    margin-bottom: 16px;
+  }
+}

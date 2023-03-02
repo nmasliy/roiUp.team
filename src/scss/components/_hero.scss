@@ -1,0 +1,35 @@
+.hero {
+  position: relative;
+  padding: 16px 0 100px;
+
+  &::before {
+    @include bg-circle;
+
+    left: 77px;
+    top: -263px;
+  }
+
+  &__inner {
+    display: grid;
+    align-items: flex-end;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  &__content {
+    padding-bottom: 40px;
+
+    p {
+      margin-bottom: 48px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 24px;
+  }
+
+  &__img {
+    position: relative;
+    left: 27px;
+  }
+}

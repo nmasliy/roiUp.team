@@ -1,0 +1,73 @@
+/* stylelint-disable */
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin mr($value) {
+  &:not(:last-child) {
+    margin-right: $value;
+  }
+}
+
+@mixin ml($value) {
+  &:not(:last-child) {
+    margin-left: $value;
+  }
+}
+
+@mixin mb($value) {
+  &:not(:last-child) {
+    margin-bottom: $value;
+  }
+}
+
+@mixin mt($value) {
+  &:not(:last-child) {
+    margin-top: $value;
+  }
+}
+
+@mixin circle($size: 22px, $color: $accent-color) {
+  width: $size;
+  height: $size;
+  border-radius: 50%;
+  background-color: $color;
+}
+
+@mixin bg-circle($size: 340px) {
+  position: absolute;
+  content: "";
+  width: $size;
+  height: $size;
+  border-radius: 50%;
+  background: linear-gradient(90.05deg, #59D24E 7.38%, #39B92D 99.32%), #8000FF;
+  filter: blur(100px);
+  will-change: filter;
+  z-index: -1;
+}
+
+@mixin triangle($size: 20px) {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 $size $size 0;
+  border-color: transparent $accent-color transparent transparent;
+}
+
+@mixin absolute-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin hover {
+  @media (any-hover: hover) {
+    &:hover {
+      @content;
+    }
+  }
+}

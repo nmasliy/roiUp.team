@@ -1,0 +1,48 @@
+html {
+  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
+}
+
+*,
+*::before,
+*::after {
+  outline-color: rgba($accent-color, 0.2);
+  box-sizing: inherit;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  min-width: 320px;
+  min-height: 100%;
+  font-family: $font-family;
+  font-size: 24px;
+  line-height: 1.4;
+  color: $white-color;
+  background-color: $bg-color;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input,
+button {
+  font: inherit;
+}
+
+@media screen and (max-width: 800px) {
+
+}
+
+@media screen and (max-width: 575px) {
+
+}

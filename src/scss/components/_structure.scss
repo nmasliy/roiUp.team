@@ -1,0 +1,67 @@
+.structure {
+  position: relative;
+
+  &::before {
+    @include bg-circle;
+
+    right: 276px;
+    top: 700px;
+  }
+
+  &::after {
+    @include bg-circle;
+
+    left: -190px;
+    bottom: 287px;
+  }
+
+  &__inner {
+  }
+
+  &__head {
+    margin: 0 auto 64px;
+    max-width: 902px;
+    text-align: center;
+  }
+
+  &__subtitle {
+  }
+
+  &__title {
+  }
+
+  &__list {
+  }
+
+  &__item {
+    @include mb(28px);
+
+    display: flex;
+    align-items: center;
+    border-radius: 21px;
+    padding: 40px 64px;
+    min-height: 464px;
+    background: rgba(28, 29, 35, 60%);
+    backdrop-filter: blur(10px);
+    gap: 90px;
+
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__info {
+    max-width: 484px;
+  }
+
+  &__name {
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.1;
+  }
+
+  &__img {
+    max-width: 380px;
+  }
+}

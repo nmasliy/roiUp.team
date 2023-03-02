@@ -1,0 +1,44 @@
+.header {
+  margin-bottom: 26px;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    border-radius: 24px;
+    padding: 19px 32px;
+    background: rgba(28, 29, 35, 60%);
+  }
+
+  &__logo {
+    display: flex;
+    margin-right: 32px;
+  }
+
+  &__nav {
+    font-size: 16px;
+    line-height: 1.2;
+
+    ul {
+      display: flex;
+    }
+
+    li {
+      @include mr(32px);
+    }
+
+    a {
+      @include hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__burger {
+    margin-left: 24px;
+  }
+
+  &__telegram {
+    display: flex;
+    margin-left: auto;
+  }
+}
