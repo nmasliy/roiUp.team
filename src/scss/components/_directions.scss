@@ -20,12 +20,48 @@
   }
 
   &__item {
+    margin: 0 10px;
     max-width: 230px;
     text-align: center;
 
     img {
       display: inline-block;
       margin: 0 auto 32px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .direction {
+    &::before {
+      right: -319px;
+    }
+
+    &__list {
+      justify-content: space-between;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .direction {
+    &__head {
+      margin-bottom: 44px;
+    }
+
+    &__list {
+      justify-content: center;
+    }
+
+    &__item {
+      margin: 16px;
+      width: calc(50% - 32px);
+
+      img {
+        margin-bottom: 20px;
+        width: 80px;
+        height: 80px;
+      }
     }
   }
 }

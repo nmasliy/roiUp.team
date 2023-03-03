@@ -15,6 +15,7 @@
   }
 
   &__nav {
+    margin-right: 24px;
     font-size: 16px;
     line-height: 1.2;
 
@@ -40,5 +41,48 @@
   &__telegram {
     display: flex;
     margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    margin-bottom: 64px;
+
+    &__logo {
+      margin-right: 24px;
+    }
+
+    &__nav li {
+      @include mr(24px);
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    margin-bottom: 32px;
+
+    &__logo {
+      img {
+        width: 113px;
+      }
+    }
+
+    &__nav {
+      font-size: 20px;
+
+      ul {
+        display: block;
+      }
+
+      li {
+        @include mr(0);
+      }
+
+      a {
+        display: block;
+        padding: 12px;
+      }
+    }
   }
 }

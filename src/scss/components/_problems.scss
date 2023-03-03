@@ -45,3 +45,33 @@
     margin-bottom: 16px;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .problems {
+    &__item {
+      padding: 0 10px 35px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .problems {
+    &__title {
+      margin-bottom: 40px;
+    }
+
+    &__inner {
+      &::before {
+        left: -158px;
+      }
+    }
+
+    &__list {
+      display: block;
+    }
+
+    &__item {
+      @include mb(48px);
+    }
+  }
+}

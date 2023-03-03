@@ -1,4 +1,5 @@
 html {
+  overflow-x: hidden;
   box-sizing: border-box;
   -webkit-text-size-adjust: 100%;
 }
@@ -39,10 +40,8 @@ button {
   font: inherit;
 }
 
-@media screen and (max-width: 800px) {
-
-}
-
-@media screen and (max-width: 575px) {
-
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 20px;
+  }
 }

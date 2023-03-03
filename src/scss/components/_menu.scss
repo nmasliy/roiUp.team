@@ -1,4 +1,4 @@
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 767px) {
   .menu {
     position: fixed;
     right: 0;
@@ -9,15 +9,17 @@
     flex-direction: column;
     align-items: center;
     overflow: auto;
-    padding: 50px 15px;
+    padding: 140px 15px 80px;
     width: 100%;
     max-width: 350px;
-    background: #1d0259;
+    background: $bg-color;
     opacity: 0;
+    transform: translateX(100%);
     transition: $menu-transition;
 
     &.is-active {
       opacity: 1;
+      transform: translateX(0);
     }
   }
 

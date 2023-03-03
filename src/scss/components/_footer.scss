@@ -1,6 +1,5 @@
 .footer {
-  &__inner {
-  }
+  position: relative;
 
   &__top {
     border-top: 1px solid rgba($white-color, 0.1);
@@ -61,6 +60,43 @@
 
     @include hover {
       transform: scale(1.05);
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .footer {
+    &__socials {
+      display: block;
+
+      ul {
+        justify-content: center;
+      }
+    }
+
+    &__link {
+      margin-bottom: 24px;
+    }
+
+    &__socials-caption {
+      margin-right: 0;
+      margin-bottom: 16px;
+    }
+
+    &__arrow {
+      position: absolute;
+      right: 20px;
+      bottom: 20px;
+      z-index: 6;
+    }
+
+    &__container {
+      display: block;
+      text-align: center;
+    }
+
+    &__copy {
+      font-size: 14px;
     }
   }
 }

@@ -49,3 +49,46 @@
     transform: translate3d(-100%, 0, 0);
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .ticker {
+    padding: 7px 0 15px;
+
+    &__item {
+      font-size: 24px;
+    }
+
+    &__subitem {
+      display: flex;
+      align-items: center;
+
+      &::before {
+        margin: 0 34px;
+        width: 26px;
+        height: 26px;
+      }
+
+      * {
+        flex-shrink: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .ticker {
+    padding: 7px 0 12px;
+
+    &__item {
+      font-size: 20px;
+    }
+
+    &__subitem {
+      &::before {
+        margin: 0 30px;
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}

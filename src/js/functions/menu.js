@@ -7,12 +7,12 @@
   const $overlay = document.querySelector('.overlay');
   const $menuItems = document.querySelectorAll('.header__nav > ul > li > a');
   const TRANSITION_DELAY = 400;
-  const MOBILE_MENU_BREAKPOINT = 800;
+  const MOBILE_MENU_BREAKPOINT = 767;
 
   let isInit = false;
 
   const checkScreenWidth = () => {
-    // Активируем меню только на экранах <= 800
+    // Активируем меню только на экранах <= 767
     if (
       $menu &&
       $burger &&

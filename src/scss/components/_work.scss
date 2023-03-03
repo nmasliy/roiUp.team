@@ -2,7 +2,7 @@
   padding: 140px 0 80px;
 
   &__title {
-    margin: 0 auto 56px;
+    margin: 0 auto 46px;
     max-width: 700px;
     text-align: center;
   }
@@ -11,22 +11,58 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin: -24px -15px;
   }
 
   &__item {
+    margin: 24px 15px;
     max-width: 200px;
     text-align: center;
   }
 
   &__img {
-    display: flex;
-    justify-content: center;
     margin-bottom: 24px;
-    min-height: 136px;
+    min-height: 137px;
+    text-align: center;
+
+    picture {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   &__caption {
     margin-bottom: 10px;
     font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .work {
+    &__title {
+      max-width: 432px;
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .work {
+    &__caption {
+      margin-bottom: 5px;
+    }
+
+    &__item {
+      width: calc(50% - 30px);
+    }
+
+    &__img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      picture {
+      }
+    }
   }
 }

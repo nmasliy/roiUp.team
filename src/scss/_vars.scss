@@ -16,7 +16,7 @@ $black-color: #000;
 $accent-color: #39b92d;
 $accent-gradient: linear-gradient(90.05deg, #59d24e 7.38%, #39b92d 99.32%), #fff;
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   :root {
     --container-offset: 16px;
   }

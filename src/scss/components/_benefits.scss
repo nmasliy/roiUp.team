@@ -28,9 +28,6 @@
     }
   }
 
-  &__content {
-  }
-
   &__content-item {
     display: none;
 
@@ -58,5 +55,45 @@
     font-weight: 700;
     font-size: 30px;
     line-height: 1.2;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .benefits {
+    &__list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__name {
+      margin: 0 auto;
+      max-width: 300px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .benefits {
+    padding-bottom: 80px;
+
+    &__tabs {
+      flex-wrap: wrap;
+    }
+
+    &__name {
+      max-width: 180px;
+      font-size: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .benefits {
+    &__list {
+      gap: 32px 10px;
+    }
+
+    &__name {
+      font-size: 17px;
+    }
   }
 }

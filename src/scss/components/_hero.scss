@@ -21,6 +21,7 @@
 
     p {
       margin-bottom: 48px;
+      font-weight: 700;
     }
   }
 
@@ -31,5 +32,58 @@
   &__img {
     position: relative;
     left: 27px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .hero {
+    &__title {
+      font-size: 48px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .hero {
+    padding-bottom: 80px;
+
+    &::before {
+      left: -291px;
+    }
+
+    &__inner {
+      display: block;
+      margin: 0 auto;
+      max-width: 566px;
+      text-align: center;
+    }
+
+    &__content {
+      margin-bottom: 64px;
+      padding-bottom: 0;
+
+      p {
+        margin-bottom: 38px;
+      }
+    }
+
+    &__img {
+      position: static;
+      margin: 0 auto;
+      width: 550px;
+      max-width: 80%;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero {
+    padding-bottom: 64px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .hero__inner {
+    max-width: 363px;
   }
 }
